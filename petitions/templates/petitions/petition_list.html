@@ -3,7 +3,9 @@
 <ul>
   {% for petition in petitions %}
   <li>
-    <a href="{% url 'petition_detail' petition.pk %}"> {{ petition.title }} </a>
+    <a href="{% url 'petitions:petition_detail' petition.pk %}">
+      {{ petition.title }}
+    </a>
   </li>
   {% empty %}
   <li>No petitions available.</li>

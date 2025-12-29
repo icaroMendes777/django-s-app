@@ -8,3 +8,19 @@ class Petition(models.Model):
 
     def __str__(self):
         return self.title
+
+class PetitionSigner(models.Model):
+    petition = models.ForeignKey(
+        Petition,
+        on_delete=models.CASCADE,
+        related_name="signers"
+    )
+    name = models.CharField(max_length=150)
+    email = models.EmailField()
+    signed_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ("petition", "email")  # prevents double signing
+
+    def __str__(self):
+        return f"{self.name} ({self.email})"
