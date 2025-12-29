@@ -1,0 +1,11 @@
+<h1>Petitions</h1>
+
+<ul>
+  {% for petition in petitions %}
+  <li>
+    <a href="{% url 'petition_detail' petition.pk %}"> {{ petition.title }} </a>
+  </li>
+  {% empty %}
+  <li>No petitions available.</li>
+  {% endfor %}
+</ul>
