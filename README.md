@@ -5,7 +5,7 @@ This project is a Django application running inside Docker with Docker Compose t
 
 ---
 
-## 🚀 Requirements
+## Requirements
 
 Make sure you have installed:
 
@@ -18,7 +18,7 @@ Make sure you have installed:
 docker compose up --build
 ```
 
-## Run
+## 🚀 Run
 
 ```bash
 docker compose up
