@@ -1,8 +1,8 @@
 # django-s-app
 
-An app for people to sign for petitions.
+An app for people to sign in for petitions. It has a basic Admin session and public facing pages.
 
-This project is a Django application running inside Docker with Docker Compose to orchestrate the services, using PostgreSQL as the database.
+This project is build in Django with Docker Compose, using a conteinerized PostgreSQL as the database.
 
 ---
 
