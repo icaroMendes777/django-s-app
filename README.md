@@ -18,7 +18,7 @@ Make sure you have installed:
 docker compose up --build
 ```
 
-## 🚀 Run
+## Run
 
 ```bash
 docker compose up
